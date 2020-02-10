@@ -19,4 +19,40 @@ body {
   font-weight: 300;
   line-height: 1.6;
 }
+
+.features {
+  background-color: #aaa;
+}
+
+.footer {
+  background-color: #101d2c;
+}
+
+.gallery {
+  background-color: #54483a;
+}
+
+.header {
+  background-color: #54483a;
+}
+
+.homes {
+  background-color: #101d2c;
+}
+
+.realtors {
+  background-color: #101d2c;
+}
+
+.sidebar {
+  background-color: #c69963;
+}
+
+.story__pictures {
+  background-color: #c69963;
+}
+
+.story__content {
+  background-color: #f9f7f6;
+}
 /*# sourceMappingURL=main.css.map */
