@@ -20,39 +20,64 @@ body {
   line-height: 1.6;
 }
 
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 80vh min-content 40vw (min-content)[3];
+      grid-template-rows: 80vh -webkit-min-content 40vw repeat(3, -webkit-min-content);
+      grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  -ms-grid-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] ([col-start] minmax(min-content, 14rem) [col-end])[8] [center-end] minmax(6rem, 1fr) [full-end];
+      grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+      grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+
 .features {
   background-color: #aaa;
+  grid-column: center-start / center-end;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
 .footer {
   background-color: #101d2c;
+  grid-column: full-start / full-end;
 }
 
 .gallery {
   background-color: #54483a;
+  grid-column: full-start / full-end;
 }
 
 .header {
   background-color: #54483a;
+  grid-column: full-start / col-end 6;
 }
 
 .homes {
   background-color: #101d2c;
+  grid-column: center-start / center-end;
 }
 
 .realtors {
   background-color: #101d2c;
+  grid-column: col-start 7 / full-end;
 }
 
 .sidebar {
   background-color: #c69963;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1;
 }
 
 .story__pictures {
   background-color: #c69963;
+  grid-column: full-start / col-end 4;
 }
 
 .story__content {
   background-color: #f9f7f6;
+  grid-column: col-start 5 / full-end;
 }
 /*# sourceMappingURL=main.css.map */
