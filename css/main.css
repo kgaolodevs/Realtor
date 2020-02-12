@@ -170,6 +170,16 @@ body {
   background-color: #f9f7f6;
 }
 
+.home__image {
+  width: 100%;
+}
+
+.home__location svg, .home__room svg, .home__area svg, .home__price svg {
+  fill: #c69963;
+  height: 2rem;
+  width: 2rem;
+}
+
 .realtors {
   background-color: #101d2c;
   grid-column: col-start 7 / full-end;
