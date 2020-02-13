@@ -207,6 +207,19 @@ body {
   padding: 1.5rem;
 }
 
+.gallery .gallery__item--1, .gallery .gallery__item--2, .gallery .gallery__item--3, .gallery .gallery__item--4, .gallery .gallery__item--5, .gallery .gallery__item--6, .gallery .gallery__item--7, .gallery .gallery__item--8, .gallery .gallery__item--9, .gallery .gallery__item--10, .gallery .gallery__item--11, .gallery .gallery__item--12, .gallery .gallery__item--13, .gallery .gallery__item--14 {
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.gallery .gallery__item--1:hover, .gallery .gallery__item--2:hover, .gallery .gallery__item--3:hover, .gallery .gallery__item--4:hover, .gallery .gallery__item--5:hover, .gallery .gallery__item--6:hover, .gallery .gallery__item--7:hover, .gallery .gallery__item--8:hover, .gallery .gallery__item--9:hover, .gallery .gallery__item--10:hover, .gallery .gallery__item--11:hover, .gallery .gallery__item--12:hover, .gallery .gallery__item--13:hover, .gallery .gallery__item--14:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
 .gallery__item--1 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -504,6 +517,45 @@ body {
 .realtors {
   background-color: #101d2c;
   grid-column: col-start 7 / full-end;
+  padding: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  grid-row-gap: 2rem;
+}
+
+.realtors__heading-3 {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.realtors__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: min-content max-content;
+      grid-template-columns: -webkit-min-content -webkit-max-content;
+      grid-template-columns: min-content max-content;
+  grid-column-gap: 2rem;
+  grid-row-gap: 5vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.realtors__image {
+  width: 7rem;
+  border-radius: 50%;
+  display: block;
+}
+
+.realtors__sold {
+  text-transform: uppercase;
+  color: #aaa;
+  margin-top: -0.3rem;
 }
 
 .sidebar {
